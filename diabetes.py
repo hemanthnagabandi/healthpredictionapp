@@ -51,7 +51,7 @@ rf=RandomForestClassifier(n_estimators= 700,
 rf.fit(X_train,Y_train)
 predictions=rf_random.predict(X_test)
 import pickle
-file = open('diabetes.pkl', 'wb')
+file = open('random_forest_regressor.pkl', 'wb')
 pickle.dump(rf, file)
 rf.predict([[6,148,72,35,1,33.6,0.627,50]])
 
